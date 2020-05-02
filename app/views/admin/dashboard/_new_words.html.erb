@@ -1,0 +1,4 @@
+<%= form_with url: '/admin/words/find_or_create', method: "post", style: 'text-align: center', id: 'find_or_create_form' do %>
+  <%= text_area_tag :words, '', style:'width:100%; height: 288px' %>
+  <%= submit_tag 'Find or Create', style:'width:100%;margin-top:8px' %>
+<% end %>

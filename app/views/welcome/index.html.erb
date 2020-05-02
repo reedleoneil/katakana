@@ -1,0 +1,6 @@
+<h2>💬 片仮名</h2>
+<ol style="padding-left: 48px">
+<% @words.each do |x| %>
+<li><strong><a href="/admin/words/<%= x.id %>"><%= x.word %></a></strong>：<%= x.definition %><%= x.sentence %></li>
+<% end %>
+</ol>
